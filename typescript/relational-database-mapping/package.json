@@ -1,0 +1,21 @@
+{
+  "name": "relational-database-mapping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.12.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6"
+  },
+  "type": "module"
+}
