@@ -1,5 +1,4 @@
 import bowling.Bowling;
-import config.database.AthleteDatabase;
 import cricket.Cricket;
 import soccer.Soccer;
 

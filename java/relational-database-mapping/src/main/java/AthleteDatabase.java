@@ -44,22 +44,9 @@ public class AthleteDatabase {
 
         String name = athlete.getName();
         String type = athlete.getType();
-        String club = null;
-        double battingAverage = 0.0;
-        double bowlingAverage = 0.0;
-
-        if (athlete instanceof Soccer) {
-            club = ((Soccer) athlete).getClub();
-        }
-
-        if (athlete instanceof Cricket) {
-            battingAverage = ((Cricket) athlete).getBattingAverage();
-        }
-
-        if (athlete instanceof Bowling) {
-            battingAverage = ((Bowling) athlete).getBattingAverage();
-            bowlingAverage = ((Bowling) athlete).getBowlingAverage();
-        }
+        String club = athlete.getClub();
+        double battingAverage = athlete.getBattingAverage();
+        double bowlingAverage = athlete.getBowlingAverage();
 
         try (var conn = Database.connect()) {
             var pstmt = conn.prepareStatement(sql);
